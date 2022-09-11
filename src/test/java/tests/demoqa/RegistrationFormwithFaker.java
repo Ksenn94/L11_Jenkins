@@ -25,7 +25,7 @@ public class RegistrationFormwithFaker extends TestBase {
                 .setEmail(testdata2.userEmail)
                 .setGender(testdata2.gender)
                 .setNumber(testdata2.userNumber)
-                .setBirthdate(testdata2.day, testdata2.month, testdata2.year)
+                //.setBirthdate(testdata2.day, testdata2.month, testdata2.year)
                 .uploadPic(testdata2.userPic)
                 .setSubject(testdata2.subject)
                 .setHobby(testdata2.hobby)

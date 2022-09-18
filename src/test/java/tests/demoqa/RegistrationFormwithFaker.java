@@ -1,6 +1,7 @@
 package tests.demoqa;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -10,12 +11,14 @@ public class RegistrationFormwithFaker extends TestBase {
     TestData2 testdata2 = new TestData2();
 
     @BeforeEach
+    @Tag("properties2")
     void setup(){
         testdata2.prepareTestData();
     }
 
     @Test
     void fillregistrationformtest() {
+
         step("Open registrations form", () -> {
             registrationFormPage.openPage();
         });
